@@ -2,39 +2,35 @@
 
 public class GridClicker : MonoBehaviour
 {
-    [Header("Grid Ayarları")]
-    [SerializeField] private float cellSize = 1f; // Blokların boyutu (genelde 1 birim)
-    [SerializeField] private LayerMask groundLayer; // Sadece zemini algılamak için opsiyonel
+    [SerializeField] private float cellSize = 1f; // Her bir bloğun boyutu
 
     void Update()
     {
-        // Sol tık kontrolü
         if (Input.GetMouseButtonDown(0))
         {
-            IdentifyGridCell();
-        }
-    }
+            // 1. Dünyada görünmez, matematiksel bir düzlem tanımlıyoruz (Y koordinatı 0 olan düzlem)
+            // Bu düzlem yukarı (Vector3.up) bakıyor ve merkeze (Vector3.zero) konumlu.
+            Plane plane = new Plane(Vector3.up, Vector3.zero);
 
-    void IdentifyGridCell()
-    {
-        // Kameradan farenin olduğu yere bir ışın (Ray) gönderiyoruz
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
+            // 2. Kameradan farenin olduğu yere bir ışın (Ray) çıkarıyoruz
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer))
-        {
-            // Çarpışma noktasını alıyoruz
-            Vector3 hitPoint = hit.point;
+            // 3. Bu ışın, yarattığımız hayali düzlemi kesiyor mu diye bakıyoruz
+            if (plane.Raycast(ray, out float enter))
+            {
+                // Işının düzlemi kestiği tam 3D nokta (Dünya pozisyonu)
+                Vector3 hitPoint = ray.GetPoint(enter);
 
-            // Dünya pozisyonunu grid koordinatına çevirme (Matematiksel yuvarlama)
-            // FloorToInt kullanıyoruz çünkü 0 ile 1 arası 0. cell, 1 ile 2 arası 1. cell'dir.
-            int x = Mathf.FloorToInt(hitPoint.x / cellSize);
-            int y = Mathf.FloorToInt(hitPoint.y / cellSize);
-            int z = Mathf.FloorToInt(hitPoint.z / cellSize);
+                // 4. Bu noktayı grid hücrelerine bölüyoruz
+                int x = Mathf.FloorToInt(hitPoint.x / cellSize);
+                int y = Mathf.FloorToInt(hitPoint.y / cellSize); // Y genellikle 0 kalır zemin için
+                int z = Mathf.FloorToInt(hitPoint.z / cellSize);
 
-            Vector3Int cellCoords = new Vector3Int(x, y, z);
+                Vector3Int cellCoords = new Vector3Int(x, y, z);
 
-            Debug.Log($"<color=cyan>Hücre Tıklandı:</color> {cellCoords} | <color=yellow>Dünya Pozisyonu:</color> {hitPoint}");
+                // Konsola yazdırıyoruz
+                Debug.Log($"<color=green>[Grid Başarılı]</color> Tıklanan Hücre: X: {cellCoords.x}, Z: {cellCoords.z} | Dünya Pozisyonu: {hitPoint}");
+            }
         }
     }
 }
