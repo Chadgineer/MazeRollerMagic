@@ -1,0 +1,658 @@
+{
+    "blocks": [
+        {
+            "prefabName": "GroundBlock",
+            "x": -5,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -5,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -5,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -4,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -5,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -5,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -4,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -4,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -3,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -3,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -3,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -3,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -1,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -2,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -2,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -2,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -1,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -1,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -1,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -2,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 0,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 0,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 0,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 0,
+            "y": 1,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -4,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -4,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "MazeSpawn",
+            "x": -4,
+            "y": 1,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -3,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -2,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 0,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": -1,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 0,
+            "y": 1,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 0,
+            "y": 1,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 0,
+            "y": 1,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 0,
+            "y": 1,
+            "z": -1
+        },
+        {
+            "prefabName": "MazeJump",
+            "x": -1,
+            "y": 1,
+            "z": 1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 1,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 1,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 1,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 1,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 2,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 1,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 2,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 2,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 2,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 2,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 1,
+            "y": 1,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 1,
+            "y": 1,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 1,
+            "y": 1,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 1,
+            "y": 1,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 1,
+            "y": 1,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 2,
+            "y": 1,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 2,
+            "y": 1,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 2,
+            "y": 1,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 2,
+            "y": 1,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 2,
+            "y": 1,
+            "z": -1
+        },
+        {
+            "prefabName": "MazeJump",
+            "x": 1,
+            "y": 2,
+            "z": 1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 4,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 4,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 4,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 4,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 4,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 4,
+            "y": 1,
+            "z": -1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 5,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 4,
+            "y": 1,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 4,
+            "y": 1,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 4,
+            "y": 1,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 4,
+            "y": 1,
+            "z": 2
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 5,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 5,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 5,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 5,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 5,
+            "y": 1,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 5,
+            "y": 1,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 5,
+            "y": 1,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 5,
+            "y": 1,
+            "z": 0
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 6,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 5,
+            "y": 1,
+            "z": -1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 6,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 6,
+            "y": 1,
+            "z": -1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 6,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 6,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 6,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 6,
+            "y": 1,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 6,
+            "y": 1,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 6,
+            "y": 1,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 6,
+            "y": 1,
+            "z": 2
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 7,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 7,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 7,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 7,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 7,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 8,
+            "y": 0,
+            "z": -1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 8,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 8,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 8,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 7,
+            "y": 1,
+            "z": 3
+        },
+        {
+            "prefabName": "MazeSoil",
+            "x": 8,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 7,
+            "y": 1,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 7,
+            "y": 1,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 7,
+            "y": 1,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 7,
+            "y": 1,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 8,
+            "y": 1,
+            "z": -1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 8,
+            "y": 1,
+            "z": 0
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 8,
+            "y": 1,
+            "z": 1
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 8,
+            "y": 1,
+            "z": 2
+        },
+        {
+            "prefabName": "GroundBlock",
+            "x": 8,
+            "y": 1,
+            "z": 3
+        },
+        {
+            "prefabName": "MazePortal",
+            "x": 7,
+            "y": 2,
+            "z": 2
+        }
+    ]
+}
