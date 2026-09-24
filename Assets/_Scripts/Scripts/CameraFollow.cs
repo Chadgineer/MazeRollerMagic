@@ -6,6 +6,7 @@ public class CameraFollow : MonoBehaviour
     [Tooltip("Eğer boş bırakılırsa sahnedeki Player otomatik bulunmaya çalışılır.")]
     public Transform target;
     public Vector3 offset;
+    [SerializeField] private float smoothSpeed = 8f; // higher = snappier, lower = laggier
 
     [Header("Otomatik Bulma Seçenekleri")]
     [SerializeField] private string playerTag = "Player";
@@ -23,15 +24,14 @@ public class CameraFollow : MonoBehaviour
     // Karakter Update veya FixedUpdate içinde hareket ederken kameranın titremesini engeller.
     void LateUpdate()
     {
-        // Hedef hala bulunamadıysa (örneğin harita geç yükleniyorsa) tekrar aramayı dene
         if (target == null)
         {
             FindPlayerAutomatically();
             return;
         }
 
-        // Hedefin pozisyonuna offset'i ekleyip direkt kameraya eşitliyoruz
-        transform.position = target.position + offset;
+        Vector3 desiredPosition = target.position + offset;
+        transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
     }
 
     private void FindPlayerAutomatically()

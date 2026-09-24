@@ -94,6 +94,19 @@ public class LevelBuilderPro : MonoBehaviour
 
     void UpdateGhostPositionAndAction()
     {
+        // Guard: nothing to place if the prefab list is empty or the index is stale
+        if (blockPrefabs == null || blockPrefabs.Length == 0 || currentBlockIndex >= blockPrefabs.Length)
+        {
+            if (ghostObject != null) ghostObject.SetActive(false);
+            return;
+        }
+
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+        {
+            if (ghostObject != null) ghostObject.SetActive(false);
+            return;
+        }
+
         if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
         {
             if (ghostObject != null) ghostObject.SetActive(false);
